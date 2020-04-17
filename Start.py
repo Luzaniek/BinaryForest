@@ -14,7 +14,7 @@ def test_default_init():
 
 def test_data_init():
 
-    print ("Test DTN")
+    print ("Test DTN:")
     #D - jakas wartosc dla value
     #T - drzewo
     #N - None

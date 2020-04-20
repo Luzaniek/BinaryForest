@@ -1,5 +1,10 @@
-class BinaryTree:
-    def __init__(self, value = None, left = None, right = None):
-        self.value = value
+class BinaryTreeNode:
+    def __init__(self, data = None, left = None, right = None):
+        self.data = data
         self.left = left
         self.right = right
+
+
+class BinarySearchTreeNode(BinaryTreeNode):
+    pass
+

@@ -81,6 +81,7 @@ def test_no_data():
     assert node.data is None
 
 
+
 test_default_init()
 test_data_init()
 test_none_tree_tree()
@@ -88,4 +89,21 @@ test_none_none_tree()
 test_none_tree_none()
 test_data_none_none()
 test_data_tree_tree()
+
 test_no_data()
+nodeLeft = BinarySearchTreeNode(222, None, None)
+nodeRight = BinarySearchTreeNode(333, None, None)
+node = BinarySearchTreeNode(112, nodeLeft, nodeRight)
+print (node.data)
+print (node.left.data)
+
+a = 77
+
+node.add_val(a)
+print (node.data)
+
+node.add_left(BinaryTreeNode())
+print (node.left)
+
+node.add_right(BinaryTreeNode())
+print (node.right)
